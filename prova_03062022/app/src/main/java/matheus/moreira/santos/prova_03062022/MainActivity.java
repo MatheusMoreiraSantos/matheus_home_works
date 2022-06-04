@@ -1,14 +1,54 @@
 package matheus.moreira.santos.prova_03062022;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private TextView tvTitulo, tvData, tvPergunta, tvResposta, tvNome01, tvNome02;
+    private EditText edtNumeroQuestao;
+    private ImageButton imbClear, imbCheck;
+    private ProvaQuestoesRespostas prova01;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+    tvTitulo            = findViewById(R.id.tvTitulo);
+    tvData              = findViewById(R.id.tvData);
+    tvPergunta          = findViewById(R.id.tvPergunta);
+    tvResposta          = findViewById(R.id.tvResposta);
+    tvNome01            = findViewById(R.id.tvNome01);
+    tvNome02            = findViewById(R.id.tvNome02);
+    edtNumeroQuestao    = findViewById(R.id.edtNumeroQuestao);
+    imbCheck            = findViewById(R.id.imbCheck);
+    imbClear            = findViewById(R.id.imbClear);
+
+    ActionBar actionBar = getSupportActionBar();
+    if(actionBar != null){
+        actionBar.setTitle("Desenvolvedores em TI");
+    }
+
+    prova01 = new ProvaQuestoesRespostas();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
