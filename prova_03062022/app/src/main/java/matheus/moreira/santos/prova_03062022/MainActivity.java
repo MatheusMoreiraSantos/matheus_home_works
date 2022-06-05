@@ -4,9 +4,11 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tvTitulo, tvData, tvPergunta, tvResposta, tvNome01, tvNome02;
@@ -35,6 +37,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     prova01 = new ProvaQuestoesRespostas();
+
+    imbCheck.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            if(edtNumeroQuestao.getText().toString().isEmpty()){
+                int  pergunta = Integer . valueOf ( edtNumeroQuestao . getText () . toString ());
+
+            Toast.makeText(MainActivity.this, "Por favor, insira o número da questão!", Toast.LENGTH_SHORT).show();
+
+        }else {
+                
+
+
+            }
+
+
+
+
+
+
+        }
+    });
+
+
+
 
 
 
