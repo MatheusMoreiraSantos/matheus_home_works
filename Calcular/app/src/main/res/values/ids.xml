@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvOpcao" type="id" />
+    <item name="spiOpcoes" type="id" />
+    <item name="edtOperando1" type="id" />
+    <item name="imgOperacao" type="id" />
+    <item name="edtOperando2" type="id" />
+    <item name="imgIgual" type="id" />
+    <item name="tvResultado" type="id" />
+    <item name="btnCalcular" type="id" />
+    <item name="btnLimpar" type="id" />
+    <item name="tvLimpar" type="id" />
+</resources>
